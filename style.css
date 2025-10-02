@@ -1,0 +1,142 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Hero sekce */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/3/3c/WWII_soldiers.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1.5s ease;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 15px 35px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Projekty */
+.accordion {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.hidden { display: none; }
+.show {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Kategorie */
+details {
+  margin-bottom: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: all 0.4s ease;
+}
+
+details[open] {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+summary {
+  padding: 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+summary.osobnosti { background: linear-gradient(135deg, #8e44ad, #9b59b6); }
+summary.operace   { background: linear-gradient(135deg, #c0392b, #e74c3c); }
+summary.udalosti  { background: linear-gradient(135deg, #d35400, #e67e22); }
+summary.mista     { background: linear-gradient(135deg, #27ae60, #2ecc71); }
+summary.organizace{ background: linear-gradient(135deg, #2980b9, #3498db); }
+
+/* Projekty odkazy */
+.links {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  background: rgba(255,255,255,0.05);
+}
+
+.links a {
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.links a:hover {
+  transform: translateY(-7px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* Footer */
+footer {
+  background: rgba(0,0,0,0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 80px;
+}
