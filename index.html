@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Druhá světová válka – projekty</title>
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
-        
-  <!-- Úvodní sekce -->
-  <section class="hero">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
     <div class="overlay"></div>
     <div class="hero-content">
       <h1>Události druhé světové války</h1>
-      <p>Interaktivní přehled osobností, událostí a operací 1939–1945</p>
+      <p>Interaktivní přehled osobností, událostí a operací druhé světové války</p>
       <button id="startBtn" class="btn">Prozkoumat projekty</button>
     </div>
   </section>
 
-  <main id="projekty" class="projects hidden">
-    <div class="content-wrapper">
+  <!-- HLAVNÍ -->
+  <main id="projekty" class="hidden">
+    <div class="container">
 
-      <!-- LEVÁ STRANA – Projekty -->
-      <section class="projects-list">
-        <!-- 👤 OSOBNOSTI -->
+      <!-- LEVÁ: menu / kategorie -->
+      <aside class="left">
         <details>
           <summary class="cat osobnosti">Osobnosti</summary>
           <div class="links">
@@ -43,105 +44,105 @@
             <a href="https://github.com/tadrsguik/Projekt-Irena-Sendlerov-" target="_blank">
               <img src="obrazky/Irena_Sendlerowa.jpg" alt="Irena Sendlerová">Irena Sendlerová
             </a>
+            <a href="https://github.com/Kellner-Frantisek/Hirohito" target="_blank">
+              <img src="obrazky/Hirohito.webp" alt="Hirohito">Hirohito
+            </a>
+            <a href="https://github.com/mlokandos/projekt" target="_blank">
+              <img src="obrazky/Rudolf Vrba.jpg" alt="Rudolf Vrba">Rudolf Vrba
+            </a>
+            <a href="https://github.com/JosefSindy/WET_projekt_Heydrichiada" target="_blank">
+              <img src="obrazky/Gabčík.jpeg" alt="Gabčík">Josef Gabčík / Jan Kubiš
+            </a>
+            <a href="https://github.com/ItzzMisax/2.IT-Projekt---Oskar-Schindler.git" target="_blank">
+              <img src="obrazky/Schindler,_Oskar.jpg" alt="Oskar Schindler">Oskar Schindler
+            </a>
+            <a href="https://github.com/budicek232/Projekt-Anna_Frankova.git" target="_blank">
+              <img src="obrazky/Anne_Frank.jpg" alt="Anna Franková">Anna Franková
+            </a>
           </div>
         </details>
 
-        <!-- ⚔️ OPERACE -->
         <details>
           <summary class="cat operace">Operace</summary>
           <div class="links">
             <a href="https://github.com/Filip603/WET---Proch-zka-Operace-Anthropoid.git" target="_blank">
               <img src="obrazky/operace anthropoid.jpg" alt="Operace Anthropoid">Operace Anthropoid
             </a>
-            <a href="https://github.com/FILA841/Operace-Barbarossa.git" target="_blank">
-              <img src="obrazky/operace barbarossa.jpg" alt="Operace Barbarossa">Operace Barbarossa
-            </a>
             <a href="https://github.com/Formy12/Projekt---Vylod-n-v-It-lii.git" target="_blank">
-              <img src="obrazky/italie.jpg" alt="Vylodění v Itálii">Vylodění v Itálii
+              <img src="obrazky/vylodění v itálii.jpg" alt="Vylodění v Itálii">Vylodění v Itálii
             </a>
             <a href="https://github.com/Tomas-Hepner/NorthAfricanCampaign" target="_blank">
-              <img src="obrazky/north africa.jpg" alt="Severoafrická kampaň">Severoafrická kampaň
+              <img src="obrazky/severoafrická.jpg" alt="Severoafrická">Severoafrická kampaň
+            </a>
+            <a href="https://github.com/FILA841/Operace-Barbarossa.git" target="_blank">
+              <img src="obrazky/operace barbarossa.jpg" alt="Operace Barbarossa">Operace Barbarossa
             </a>
           </div>
         </details>
 
-        <!-- 📜 UDÁLOSTI -->
         <details>
           <summary class="cat udalosti">Události</summary>
           <div class="links">
             <a href="https://github.com/KrizMartin/wet-project2.IT" target="_blank">
-              <img src="obrazky/útok na pearl harbor.jpeg" alt="Útok na Pearl Harbor">Útok na Pearl Harbor
+              <img src="obrazky/útok na pearl harbor.jpeg" alt="Pearl Harbor">Útok na Pearl Harbor
+            </a>
+            <a href="https://github.com/JosefSindy/WET_projekt_Heydrichiada" target="_blank">
+              <img src="obrazky/heyndricháda.jpg" alt="Heydrichiáda">Heydrichiáda
+            </a>
+            <a href="https://github.com/HalackaDavid/Project.git" target="_blank">
+              <img src="obrazky/varšavské povstání.jpg" alt="Varšavské povstání">Varšavské povstání 1944
             </a>
             <a href="https://github.com/Mbarborka/holokaust" target="_blank">
               <img src="obrazky/holokaust.jpeg" alt="Holokaust">Holokaust
             </a>
-            <a href="https://github.com/kresadlo/project-hiroshima-nagasaki" target="_blank">
-              <img src="obrazky/hiroshima.jpg" alt="Hiroshima a Nagasaki">Hiroshima a Nagasaki
-            </a>
-            <a href="https://github.com/HalackaDavid/Project.git" target="_blank">
-              <img src="obrazky/varsava.jpg" alt="Varšavské povstání">Varšavské povstání
+            <a href="https://github.com/BohmJakub/projekt-wet/tree/master" target="_blank">
+              <img src="obrazky/zbrojení.jpg" alt="Zbrojení">Zbrojení celého světa
             </a>
           </div>
         </details>
-      </section>
 
-      <aside class="map-section">
-        <h2>Mapa druhé světové války</h2>
-        <div id="map"></div>
+        <details>
+          <summary class="cat mista">Místa</summary>
+          <div class="links">
+            <a href="https://github.com/kresadlo/project-hiroshima-nagasaki" target="_blank">
+              <img src="obrazky/Hirošima.jpg" alt="Hirošima">Hirošima a Nagasaki
+            </a>
+            <a href="https://github.com/MagorStevie/Main-project.git" target="_blank">
+              <img src="obrazky/Osvětim.jpeg" alt="Osvětim">Osvětim
+            </a>
+            <a href="https://github.com/langyyy/wet-projekt-deti-v-terezine" target="_blank">
+              <img src="obrazky/terezín.jpg" alt="Terezín">Život dětí v Terezíně
+            </a>
+            <a href="https://github.com/djstorm1/Ravensbruck" target="_blank">
+              <img src="obrazky/ravensbruck.jpg" alt="Ravensbruck">Koncentrační tábor Ravensbrück
+            </a>
+          </div>
+        </details>
 
-        <h2>Časová osa 1939–1945</h2>
-        <div class="timeline">
-          <div class="event"><span>1939</span> — Německo napadá Polsko, začátek války</div>
-          <div class="event"><span>1940</span> — Bitva o Británii, pád Francie</div>
-          <div class="event"><span>1941</span> — Operace Barbarossa, útok na Pearl Harbor</div>
-          <div class="event"><span>1942</span> — Bitva u Stalingradu</div>
-          <div class="event"><span>1943</span> — Vylodění v Itálii</div>
-          <div class="event"><span>1944</span> — Vylodění v Normandii</div>
-          <div class="event"><span>1945</span> — Konec války v Evropě, Hiroshima a Nagasaki</div>
-        </div>
+        <details>
+          <summary class="cat organizace">Organizace a ostatní</summary>
+          <div class="links">
+            <a href="https://github.com/Martin69420/Projekt-2.IT.git" target="_blank">
+              <img src="obrazky/Osn.jpeg" alt="OSN">Vznik OSN
+            </a>
+          </div>
+        </details>
       </aside>
+
+      <!-- PRAVÁ: mapa + timeline -->
+      <section class="right">
+        <div id="map"></div>
+        <div id="timeline"></div>
+      </section>
 
     </div>
   </main>
 
+  <footer class="footer">
+    <p style="opacity:.6; font-size:.9rem; text-align:center; padding:18px 0;">Spojení studentských prací • Projekt</p>
+  </footer>
+
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    const btn = document.getElementById("startBtn");
-    const projekty = document.getElementById("projekty");
-    const hero = document.querySelector(".hero");
-
-    btn.addEventListener("click", () => {
-      hero.style.display = "none";
-      projekty.classList.remove("hidden");
-      projekty.classList.add("show");
-    });
-
-    // 🌍 MAPA
-    const map = L.map('map').setView([20, 0], 2);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
-
-    // 📍 Klíčová místa války s odkazy
-    const locations = [
-      { name: "Londýn – Bitva o Británii (1940)", coords: [51.5072, -0.1276], link: "https://github.com/Danda0077/WET_PROJECT_CHURCHILL" },
-      { name: "Berlín – Kapitulace Německa (1945)", coords: [52.52, 13.405], link: "https://github.com/FILA841/Operace-Barbarossa.git" },
-      { name: "Varšava – Povstání 1944", coords: [52.2297, 21.0122], link: "https://github.com/HalackaDavid/Project.git" },
-      { name: "Moskva – Operace Barbarossa (1941)", coords: [55.7558, 37.6173], link: "https://github.com/FILA841/Operace-Barbarossa.git" },
-      { name: "Pearl Harbor – Útok (1941)", coords: [21.3649, -157.9394], link: "https://github.com/KrizMartin/wet-project2.IT" },
-      { name: "Stalingrad – Bitva (1942)", coords: [48.708, 44.513], link: "https://github.com/FILA841/Operace-Barbarossa.git" },
-      { name: "Normandie – Vylodění (1944)", coords: [49.3, -0.7], link: "https://github.com/Formy12/Projekt---Vylod-n-v-It-lii.git" },
-      { name: "Hiroshima – Atomová bomba (1945)", coords: [34.3853, 132.4553], link: "https://github.com/kresadlo/project-hiroshima-nagasaki" },
-      { name: "Nagasaki – Atomová bomba (1945)", coords: [32.7767, 129.865], link: "https://github.com/kresadlo/project-hiroshima-nagasaki" },
-      { name: "Afrika – Severoafrická kampaň (1941-1942)", coords: [31, 10], link: "https://github.com/Tomas-Hepner/NorthAfricanCampaign" }
-    ];
-
-    locations.forEach(loc => {
-      const marker = L.marker(loc.coords).addTo(map);
-      marker.bindPopup(`<b>${loc.name}</b><br><a href="${loc.link}" target="_blank">Otevřít projekt</a>`);
-      marker.on('click', () => window.open(loc.link, '_blank'));
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
